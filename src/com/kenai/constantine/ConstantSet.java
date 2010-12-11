@@ -84,7 +84,7 @@ public class ConstantSet extends AbstractSet<Constant> {
         String[] prefixes = {
             Platform.getPlatform().getPackageName(),
             Platform.getPlatform().getOSPackageName(),
-            Platform.class.getPackage().getName() + ".platform.fake",
+            "com.kenai.constantine" + ".platform.fake",
         };
         for (String prefix : prefixes) {
             try {

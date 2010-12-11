@@ -36,10 +36,10 @@ public class Platform {
     }
 
     public String getPackageName() {
-        return String.format("%s.platform.%s.%s", Platform.class.getPackage().getName(), OS, ARCH);
+        return String.format("%s.platform.%s.%s", "com.kenai.constantine", OS, ARCH);
     }
     public String getOSPackageName() {
-        return String.format("%s.platform.%s", Platform.class.getPackage().getName(), OS);
+        return String.format("%s.platform.%s", "com.kenai.constantine", OS);
     }
 
     public static final Map<String, String> OS_NAMES = new HashMap<String, String>() {{
